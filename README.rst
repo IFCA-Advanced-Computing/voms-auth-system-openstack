@@ -7,7 +7,11 @@ VOMS authentication extensions to OpenStack.
 Installation
 ~~~~~~~~~~~~
 
-In your Openstack client machine just run::
+Install it via pip::
+
+    pip install voms-auth-system-openstack
+
+Or clone the repo and install it::
 
     git clone https://github.com/IFCA/voms-auth-system-openstack
     cd voms-auth-system-openstack

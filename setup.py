@@ -19,11 +19,6 @@
 
 import os
 import setuptools
-import sys
-
-
-def read_file(file_name):
-    return open(os.path.join(os.path.dirname(__file__), file_name)).read()
 
 
 setuptools.setup(
@@ -32,9 +27,12 @@ setuptools.setup(
     author="Alvaro Lopez",
     author_email="aloga@ifca.unican.es",
     description="VOMS-based authentication for Openstack",
-    long_description=read_file("README.rst"),
+    long_description=("This is a plugin for OpenStack Clients which provides "
+                      "client support for VOMS authentication extensions to "
+                      "OpenStack."),
     license="Apache License, Version 2.0",
     url="https://github.com/IFCA/voms-auth-system-openstack",
+    download_url="https://github.com/IFCA/voms-auth-system-openstack/archive/master.tar.gz",
     packages=setuptools.find_packages(exclude=['tests', 'tests.*']),
     zip_safe=False,
     classifiers=[
